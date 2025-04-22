@@ -3,119 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bongiwe Ntshantsha Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Bongiwe Ntshantsha - Portfolio</title>
 </head>
 <body>
-<header>
-    <div class="container">
-        <h1>Bongiwe Ntshantsha</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+
+    <!-- Header Section -->
+    <header class="header">
+       <a href="#home" class="logo">Bongiwe Ntshantsha</a>
+
+       <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
         </nav>
 
-        <button id="dark-mode-toggle" class="toggle-off">
-            <i class="fas fa-toggle-off"></i>
-        </button>
+<!--        <button id="dark-mode-toggle" class="toggle-off">-->
+<!--            <i class="fas fa-toggle-off"></i>-->
+<!--        </button>-->
+    </header>
 
 
+    <!-- Home Section-->
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="resources/images/Profile-photo.jpg" alt="Profile Image">
+        </div>
 
-    </div>
-</header>
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Bongiwe Ntshantsha</h1>
+            <h3>and I'm a Software Developer</h3>
 
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Hi! I'm Bongiwe Ntshantsha, I am an aspiring software developer. I have the ability to combine technical proficiency with a creative mindset. My soft skills in communication, teamwork, and collaboration enable me to thrive in diverse environments. My curiosity-driven approach ensures thorough research and understanding in every project I undertake.</p>
-        <a href="resume.pdf" download="Bongiwe_Ntshantsha_Resume" class="download-btn">Download Resume</a>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <a href="resources/Bongiwe-Ntshantsha-Resume-2025.pdf" class="download-btn">Download CV</a>
+        </div>
+    </section>
 
-    </div>
-</section>
 
-<section id="skills">
-    <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill">
+    <!-- About Section-->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>I'm a Software Developer</h3>
+            <p>Coding is my way of solving real-world problems and creating impactful solutions through technology. I’m passionate about using tech to make lives easier and more efficient, and I’m particularly enthusiastic about web development because it offers endless opportunities for creativity and problem-solving.
+                Whether it's crafting seamless user interfaces or tackling tricky back-end challenges, I’m always eager to learn, grow, and collaborate. My curiosity drives me to explore new tools, and my adaptability ensures I can thrive in dynamic environments.</p>
+<!--            <a href="#" class="btn">Read More</a>-->
+        </div>
+        <div class="about-img">
+            <img src="resources/images/About-photo.jpg" alt="About Image">
+        </div>
+    </section>
+
+
+    <!-- Skills Section-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+        <div class="skills-container">
+            <div class="skills-box">
                 <i class="fas fa-code"></i>
                 <h3>Programming</h3>
                 <p>Java, Python, JavaScript, HTML, CSS, SQL, SQLite, version control (Git/GitHub)</p>
             </div>
-            <div class="skill">
+            <div class="skills-box">
                 <i class="fas fa-users"></i>
                 <h3>Collaboration</h3>
                 <p>Agile methodologies and teamwork</p>
             </div>
-            <div class="skill">
+            <div class="skills-box">
                 <i class="fa fa-puzzle-piece"></i>
                 <h3>Problem Solving</h3>
                 <p>Logical thinking, analytical skills and troubleshooting</p>
             </div>
-            <div class="skill">
+            <div class="skills-box">
                 <i class="fas fa-check-circle"></i>
                 <h3>Testing</h3>
                 <p>Unit testing, User Acceptance Testing (UAT), and Quality Assurance (QA) Testing</p>
             </div>
-        </div>
-    </div>
-</section>
-
-<section id="projects">
-    <div class="container">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <h3>Dictionary App</h3>
-                <img src="images/dictionary icon.jpeg" alt="Screenshot of Dictionary App" class="project-image">
-                <!--<p>A simple SPA that allows users to look up words, synonyms, and antonyms. It fetches data from an API and displays detailed word meanings, pronunciations, and related words.</p> --> <p>In ptogress</p>
-                <a href="https://github.com/yourusername/dictionary-app" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="project">
-                <h3>Mastermind Game</h3>
-                <img src="images/Board game Master Mind.jpeg" alt="Screenshot of Mastermind Game" class="project-image">
-                <!--<p>A Python-based codebreaking game where the player must guess a randomly generated 4-digit code within 12 turns. The game provides feedback on correct digits in the correct position and digits that are correct but in the wrong position.</p> --> <p>In progress</p>
-                <a href="https://github.com/yourusername/mastermind-game" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
-            </div>
-            <div class="project">
-                <h3>Unity Health Connect</h3>
-                <img src="images/wellness.jpeg" alt="Screenshot of Unity Health Connect" class="project-image">
-              <!--  <p>A dynamic webpage featuring sign-up, login, and feature display enhancements for a healthcare platform.</p>-->
-              <p>Under construction</p>
-                <a href="https://github.com/yourusername/unity-health-connect" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+            <div class="skills-box">
+                <i class="fas fa-database"></i>
+                <h3>Database Management</h3>
+                <p>SQLite, MySQL</p>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact">
-    <div class="container">
-        <h2>Contact</h2>
-        <p>Feel free to reach out via Email or connect with me on LinkedIn.</p>
-        <div class="contact-icons">
-            <a href="mailto:bongiwentshantsha@gmail.com" class="contact-icon"><i class="fas fa-envelope"></i></a>Email
-            <a href="https://www.linkedin.com/in/bongiwe-ntshantsha-6844342b0" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>Linkedin
+
+<!--    Project Section-->
+    <section class="projects" id="projects">
+        <div class="projects-box">
+        <h2 class="heading">Projects</h2>
+
+            <div class="wrapper">
+                <div class="project-item">
+                    <h3>Dictionary App</h3>
+                    <img src="resources/images/Dictionary photo.jpg" alt="Screenshot of Dictionary App">
+                    <p>A simple SPA that allows users to look up words, synonyms, and antonyms. It fetches data from an API and displays detailed word meanings, pronunciations, and related words.</p>
+                    <a href="https://github.com/yourusername/dictionary-app" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-item">
+                    <h3>Mastermind Game</h3>
+                    <img src="resources/images/Board game Master Mind.jpg" alt="Screenshot of Mastermind Game">
+                    <p>A Python codebreaking game where players guess a 4-digit code within 12 turns, with feedback on correct and misplaced digits.</p>
+                    <p>(In progress)</p>
+                    <a href="https://github.com/yourusername/mastermind-game" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="project-item">
+                    <h3>Unity Health Connect</h3>
+                    <img src="resources/images/Wellness photo.jpg" alt="Screenshot of Unity Health Connect">
+                    <p>A dynamic webpage featuring sign-up, login, and feature display enhancements for a healthcare platform.</p>
+                    <p>(Under construction)</p>
+                    <a href="https://github.com/yourusername/unity-health-connect" target="_blank" class="github-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<button id="back-to-top" title="Back to Top" onclick="scrollToTop()">
-    <i class="fas fa-arrow-up"></i>
-</button>
+<!--    Contact Section-->
+    <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me</span></h2>
+<!--            <p>Feel free to reach out via Email or connect with me on LinkedIn.</p>-->
+           <form action="#">
+               <div class="input-box">
+                   <input type="text" placeholder="Full Name">
+                   <input type="email" name="Email " placeholder="Email Address">
+               </div>
+               <div class="input-box">
+                   <input type="number" placeholder="Phone Number">
+                   <input type="text" placeholder="Email Subject">
+               </div>
+               <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+               <input type="submit" value="Send Message" class="btn">
+           </form>
+    </section>
 
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Bongiwe Ntshantsha. All rights reserved.</p>
-    </div>
-</footer>
+
+        <i class="fa-solid fa-angles-up" id="back-to-top-icon"></i>
+
+
+<!--    Footer Section-->
+    <footer class="footer">
+        <p class="copyright">
+            Bongiwe Ntshantsha. All rights reserved.
+        </p>
+    </footer>
+
 </body>
 </html>
