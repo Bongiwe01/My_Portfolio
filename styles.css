@@ -238,7 +238,6 @@ section {
 
 /*Skills Section Styles*/
 .skills {
-    margin-bottom: 7rem;
     padding-top: 12rem;
 }
 
@@ -424,6 +423,25 @@ section {
      box-shadow: 0 0 1.6rem var(--hover-color--);
 
 }
+#back-to-top-icon {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+#back-to-top-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 1.6rem var(--hover-color--);
+
+}
+
 
 /* Footer Styles */
 .footer {
